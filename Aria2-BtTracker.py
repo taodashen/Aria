@@ -41,7 +41,7 @@ def handle_str(tracker):
     return bt_tracker_str
 
 
-# x写入aria2.conf文件
+# 写入aria2.conf文件
 def main():
     # 打开文件读取内容
     print("Get Best or All Bt-Tracker(0/1):")
