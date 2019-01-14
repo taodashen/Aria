@@ -43,7 +43,6 @@ def handle_str(tracker):
 
 # 写入aria2.conf文件
 def main():
-    # 打开文件读取内容
     print("Get Best or All Bt-Tracker(0/1):")
     tracker_type = input()
     html = get_tracker(tracker_type)
@@ -52,6 +51,7 @@ def main():
     print("Append or Replace(0/1):")
     func = input()
 
+    # 打开文件读取内容
     file = open("aria2.conf", "r")
     file_list = file.readlines()
     file.close()
